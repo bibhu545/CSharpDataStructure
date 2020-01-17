@@ -29,6 +29,16 @@ namespace DataStructureUtils
             //For Red-Black Tree
             RedBlackTree<int, string> redBlackTree = new RedBlackTree<int, string>();
 
+            //For Searches
+
+            //For Sortings
+
+            //For BST
+            BinarySearchTree<int> binarySearchTree = new BinarySearchTree<int>();
+
+            //For Trie
+            Trie trie = new Trie();
+            
             Console.ReadKey();
         }
     }
