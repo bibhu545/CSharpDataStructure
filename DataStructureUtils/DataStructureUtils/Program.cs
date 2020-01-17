@@ -17,8 +17,14 @@ namespace DataStructureUtils
             //For CustomQueue<T> class
             CustomQueue<int> customQueue = new CustomQueue<int>();
 
+            //For PriorityQueue
+            PriorityQueue<int> priQueue = new PriorityQueue<int>();
+
+            //For MinHeap<T> class
+            MinHeap<int> minHeap = new MinHeap<int>();
+
             //For MaxHeap<T> class
-            MaxHeap<int> heap = new MaxHeap<int>();
+            MaxHeap<int> maxHeap = new MaxHeap<int>();
 
             //For Red-Black Tree
             RedBlackTree<int, string> redBlackTree = new RedBlackTree<int, string>();

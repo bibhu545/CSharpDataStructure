@@ -4,31 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataUtils
+namespace DataStructureUtils
 {
     class GenericMinHeap
     {
-        static void Main(string[] args)
-        {
-            MinHeap<int> heap = new MinHeap<int>();
-            heap.AddItemToHeap(6);
-            heap.AddItemToHeap(8);
-            heap.AddItemToHeap(5);
-            heap.AddItemToHeap(9);
-            heap.AddItemToHeap(3);
-            heap.AddItemToHeap(2);
-            heap.Print();
-            heap.RemoveMin();
-            heap.Print();
-            heap.UpdateElementByIndex(8, 3);
-            heap.Print();
-            heap.UpdateElement(3, 8);
-            heap.Print();
-            heap.UpdateElements(8, 1);
-            heap.Print();
-            Console.WriteLine(heap.IsInHeap(3));
-            Console.ReadLine();
-        }
+        //static void Main(string[] args)
+        //{
+        //    MinHeap<int> heap = new MinHeap<int>();
+        //    heap.AddItemToHeap(6);
+        //    heap.AddItemToHeap(8);
+        //    heap.AddItemToHeap(5);
+        //    heap.AddItemToHeap(9);
+        //    heap.AddItemToHeap(3);
+        //    heap.AddItemToHeap(2);
+        //    heap.Print();
+        //    heap.RemoveMin();
+        //    heap.Print();
+        //    heap.UpdateElementByIndex(8, 3);
+        //    heap.Print();
+        //    heap.UpdateElement(3, 8);
+        //    heap.Print();
+        //    heap.UpdateElements(8, 1);
+        //    heap.Print();
+        //    Console.WriteLine(heap.IsInHeap(3));
+        //    Console.ReadLine();
+        //}
     }
 
     public class MinHeap<T> where T : IComparable

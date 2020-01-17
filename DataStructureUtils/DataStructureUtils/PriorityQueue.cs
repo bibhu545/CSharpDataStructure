@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataUtils
+namespace DataStructureUtils
 {
     public class PriorityQueue<T> 
     {
@@ -186,36 +186,36 @@ namespace DataUtils
             return 2 * index + 2;
         }
     }
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            PriorityQueue<int> queue = new PriorityQueue<int>();
-            Random rnd = new Random();
-            // enqueue
-            queue.Enqueue(5, 4);
-            queue.Enqueue(3, 2);
-            queue.Enqueue(9, 0);
-            queue.Enqueue(8, 57);
-            queue.Enqueue(6, 4);
-            queue.Enqueue(1, -1);
-            Console.WriteLine(queue.PrintQueue()); // Out: 0 57 4 2 4 -1
+    //class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        PriorityQueue<int> queue = new PriorityQueue<int>();
+    //        Random rnd = new Random();
+    //        // enqueue
+    //        queue.Enqueue(5, 4);
+    //        queue.Enqueue(3, 2);
+    //        queue.Enqueue(9, 0);
+    //        queue.Enqueue(8, 57);
+    //        queue.Enqueue(6, 4);
+    //        queue.Enqueue(1, -1);
+    //        Console.WriteLine(queue.PrintQueue()); // Out: 0 57 4 2 4 -1
 
-            // value in queue
-            Console.WriteLine(queue.IsInQueue(78)); // Out: False
+    //        // value in queue
+    //        Console.WriteLine(queue.IsInQueue(78)); // Out: False
 
-            // update
-            queue.UpdatePriority(10,-1);
-            Console.WriteLine(queue.PrintQueue()); // Out: -1 57 0 2 4 4 
+    //        // update
+    //        queue.UpdatePriority(10,-1);
+    //        Console.WriteLine(queue.PrintQueue()); // Out: -1 57 0 2 4 4 
 
-            // dequeue
-            while (queue.Count > 1)
-            {
-                Console.Write(queue.Dequeue() + " ");
-            }
-            Console.WriteLine(); // Out: -1 0 57 4 4
-            Console.WriteLine(queue.PrintQueue()); // Out: 2
-            Console.ReadLine();
-        }
-    }
+    //        // dequeue
+    //        while (queue.Count > 1)
+    //        {
+    //            Console.Write(queue.Dequeue() + " ");
+    //        }
+    //        Console.WriteLine(); // Out: -1 0 57 4 4
+    //        Console.WriteLine(queue.PrintQueue()); // Out: 2
+    //        Console.ReadLine();
+    //    }
+    //}
 }
