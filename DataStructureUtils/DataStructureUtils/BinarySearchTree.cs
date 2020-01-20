@@ -163,7 +163,7 @@ namespace DataStructureUtils
         }
 
         /// <summary>
-        /// Traverses a tree in DFS. 
+        /// Traverses a tree in DFS 
         /// </summary>
         /// <param name="method">DepthFirstTraversalMethod Enum </param>
         /// <returns>Tkey</returns>
